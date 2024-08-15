@@ -54,6 +54,7 @@
 - ElenemtPlus【UI】
 - vue-waterfall【图片显示瀑布流】
 - animate【动画】
+- md-editor-v3【MD文档】
 ### 功能介绍
 - UserModel
   - login/register 【登录/注册】
