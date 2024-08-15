@@ -1,0 +1,24 @@
+server:
+  port: 8082
+
+spring:
+  redis:
+    host: localhost
+    port: 6379
+
+logos:
+  db:
+    host: 127.0.0.1
+    database: logos-user
+    user: root
+    password: 123
+  swagger:
+    title: "用户服务接口文档"
+    desc: "用户服务接口文档"
+    package: com.violet.user.controller
+  sms:
+    regionId: 'cn-hangzhou'
+    accessKeyId: ''
+    secret: ''
+    signName: ''
+    templateCode: ''

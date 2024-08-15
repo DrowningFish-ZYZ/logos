@@ -1,0 +1,16 @@
+server:
+  port: 8083
+
+logos:
+  upload:
+   directory: "D:/service/nginx-1.18.0/html/images"
+   http: 'http://localhost/images'
+  db:
+    host: 127.0.0.1
+    database: logos-image
+    user: root
+    password: 123
+  swagger:
+    title: "图片服务接口文档"
+    desc: "图片服务接口文档"
+    package: com.violet.image.controller

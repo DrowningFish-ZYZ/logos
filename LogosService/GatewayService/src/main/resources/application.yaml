@@ -1,0 +1,41 @@
+server:
+  port: 8081
+
+spring:
+  cloud:
+    gateway:
+      globalcors:
+        cors-configurations:
+          # 仅在开发环境设置为*
+          '[/**]':
+            allowedOrigins: "*"
+            allowedHeaders: "*"
+            allowedMethods: "*"
+      routes:
+        - id: user-service
+          uri: lb://user-service
+          predicates:
+            - Path=/api/users/**
+        - id: image-service
+          uri: lb://image-service
+          predicates:
+            - Path=/api/imageGroups/**,/api/images/**
+        - id: article-service
+          uri: lb://article-service
+          predicates:
+            - Path=/api/publishArticleGroups/**,/api/publishArticles/**,/api/articles/**,/api/collectArticleGroups/**,/api/collectArticles/**
+        - id: comment-service
+          uri: lb://comment-service
+          predicates:
+            - Path=/api/comments/**
+
+logos:
+  auth:
+    excludePaths:
+      - /api/users/login
+      - /api/users/login/code/**
+      - /api/users
+      - /api/users/register
+      - /api/users/code/**
+      - /api/articles/**
+      - /api/comments/list/**

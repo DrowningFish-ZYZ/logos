@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: article-service
+  cloud:
+    nacos:
+      server-addr: 192.168.128.101:8848
+      config:
+        file-extension: yaml
+        shared-configs:
+          - data-id: shared-jdbc.yaml
+          - data-id: shared-log.yaml
+          - data-id: shared-swagger.yaml
+          - data-id: shared-seata.yaml

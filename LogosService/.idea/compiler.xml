@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ArticleService" />
+        <module name="CommentService" />
+        <module name="UserService" />
+        <module name="z-common" />
+        <module name="z-api" />
+        <module name="ImageService" />
+        <module name="GatewayService" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ArticleService" options="-parameters" />
+      <module name="CommentService" options="-parameters" />
+      <module name="GatewayService" options="-parameters" />
+      <module name="ImageService" options="-parameters" />
+      <module name="LogosService" options="" />
+      <module name="UserService" options="-parameters" />
+      <module name="z-api" options="-parameters" />
+      <module name="z-common" options="-parameters" />
+    </option>
+  </component>
+</project>
