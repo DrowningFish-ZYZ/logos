@@ -1,6 +1,9 @@
 # logos
 简洁的MD文档网
 
+## 项目展示
+项目地址：http://8.134.56.250/home
+
 ## 后端技术详情及功能介绍
 ### 技术详情
 本项目使用的技术如下：
@@ -308,8 +311,6 @@ nohup java -Xms64m -Xmx128m -jar ArticleService.jar --spring.cloud.nacos.server-
 # 启动评论服务器 
 nohup java -Xms64m -Xmx128m -jar CommentService.jar --spring.cloud.nacos.server-addr=127.0.0.1:8848 &
 ```
-## 项目展示
-项目地址：http://8.134.56.250/home
 
 ## 最后
 感谢一下 B 站的黑马老师们！！！
